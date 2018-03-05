@@ -1,0 +1,9 @@
+<h2>Users</h2>
+
+<ul>
+
+  {{render-all-users users=model}}
+{{#each model as |user|}}
+  <li>{{user.email}}</li>
+{{/each}}
+</ul>
