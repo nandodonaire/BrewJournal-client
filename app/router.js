@@ -11,7 +11,9 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('breweries');
+  this.route('breweries', function() {
+    this.route('add-brewery');
+  });
 });
 
 export default Router;
