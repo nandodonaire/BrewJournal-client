@@ -50,7 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/BrewJournal-client';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://brewjournal.herokuapp.com/';
   }
 
   return ENV;
