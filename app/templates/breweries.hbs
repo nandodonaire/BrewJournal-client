@@ -1,0 +1,15 @@
+<h2>Breweries: </h2>
+
+<ul>
+{{#each model as |brewery|}}
+  <li><h3>{{brewery.name}}</h3></li>
+  <li>{{brewery.location}}</li>
+  <li>{{brewery.beersTasted}}</li>
+  <li>{{brewery.notes}}</li>
+  {{!-- <button>Delete Brewery</button>
+  <button>Edit Brewery</button> --}}
+{{/each}}
+</ul>
+
+{{!-- {{#link-to 'examples.new-example'}}<button>Add Example</button>{{/link-to}} --}}
+{{outlet}}

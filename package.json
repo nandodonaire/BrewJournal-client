@@ -62,6 +62,9 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "ember-qunit": "^3.3.0"
+    "chalk": "^2.3.2",
+    "each-async": "^1.1.1",
+    "ember-qunit": "^3.3.0",
+    "indent-string": "^3.2.0"
   }
 }
