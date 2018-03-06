@@ -15,7 +15,7 @@
 <p>Brewery Notes: {{model.notes}}</p>
 {{input value=model.notes}}
 <button {{action 'edit' model}}>Save</button>
-
+<button {{action 'deleteBrewery' model}}>Delete Brewery</button>
 {{!-- <button {{action 'deleteBrewery'}}>Delete Brewery</button> --}}
 {{!-- <button>Edit Brewery</button> --}}
 {{#link-to 'breweries'}}<button>Breweries</button>{{/link-to}}

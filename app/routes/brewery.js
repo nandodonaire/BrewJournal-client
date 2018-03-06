@@ -8,6 +8,11 @@ export default Route.extend({
   actions: {
     edit(model) {
       return model.save()
-    }
+    },
+    deleteBrewery(model) {
+      // console.log('Delete is triggering!')
+      return model.destroyRecord()
+        .then(()=> this.transitionTo('breweries'))
   }
+}
 });
