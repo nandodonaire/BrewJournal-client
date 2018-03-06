@@ -6,8 +6,8 @@ export default Route.extend({
 },
 actions: {
 save(newBrewery) {
-  console.log('Save ran!')
-      console.log('Brewery name is', newBrewery.get('name'))
+  // console.log('Save ran!')
+      // console.log('Brewery name is', newBrewery.get('name'))
       return newBrewery.save()
         .then(()=> this.transitionTo('breweries'))
 }
