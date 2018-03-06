@@ -6,7 +6,7 @@ export default Route.extend({
   },
   actions: {
     deleteBrewery(brewery) {
-      console.log('Delete is triggering!')
+      // console.log('Delete is triggering!')
       return brewery.destroyRecord()
     }
   }
