@@ -1,4 +1,4 @@
-<h2>Breweries: </h2>
+
 
 {{!-- {{#each model as |brewery|}}
 <div>
@@ -10,7 +10,32 @@
 </div>
 {{/each}} --}}
 
-<table class="table">
+{{#if model}}
+  <h2>Breweries: </h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+  {{#each model as |brewery|}}
+    <tbody>
+      <tr>
+        {{#link-to 'brewery' brewery}}
+          <td>{{brewery.name}}</td>
+        {{/link-to}}
+        <td>{{brewery.location}}</td>
+      </tr>
+    </tbody>
+    {{/each}}
+  </table>
+  {{else}}
+  <h3>It looks like you currently don't have any breweries.</h3>
+  <h4>You can add breweries by clicking on Add Brewery below</h4>
+{{/if}}
+
+{{!-- <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
@@ -25,23 +50,11 @@
       {{/link-to}}
       <td>{{brewery.location}}</td>
     </tr>
-    {{!-- <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr> --}}
   </tbody>
   {{/each}}
-</table>
+</table> --}}
 
 <div>
-{{#link-to 'breweries.add-brewery'}}<button>Add Brewery</button>{{/link-to}}
+{{#link-to 'breweries.add-brewery'}}<button class="btn btn-primary">Add Brewery</button>{{/link-to}}
 {{outlet}}
 </div>
