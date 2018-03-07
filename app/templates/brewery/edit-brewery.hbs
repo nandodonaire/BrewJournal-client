@@ -1,6 +1,7 @@
 <h2>Edit Brewery</h2>
-{{input value=model.name}}
-{{input value=model.location}}
-{{input value=model.beersTasted}}
-{{input value=model.notes}}
+<p>Name {{input value=model.name}}</p>
+<p>Location {{input value=model.location}}</p>
+<p>Beers Tasted {{input value=model.beersTasted}}</p>
+<p>Notes {{input value=model.notes}}</p>
 <button {{action 'edit' model}}>Save Changes</button>
+{{#link-to 'brewery'}}<button>Close</button>{{/link-to}}
