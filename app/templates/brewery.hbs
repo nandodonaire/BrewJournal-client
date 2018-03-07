@@ -1,21 +1,23 @@
 <h2>Brewery</h2>
 
 <h3>Name: {{model.name}}</h3>
-{{input value=model.name}}
-<button {{action 'edit' model}}>Save</button>
+{{!-- {{input value=model.name}} --}}
+{{!-- <button {{action 'edit' model}}>Save</button> --}}
 
 <p>Location: {{model.location}}</p>
-{{input value=model.location}}
-<button {{action 'edit' model}}>Save</button>
+{{!-- {{input value=model.location}} --}}
+{{!-- <button {{action 'edit' model}}>Save</button> --}}
 
 <p>Beers Tasted: {{model.beersTasted}}</p>
-{{input value=model.beersTasted}}
-<button {{action 'edit' model}}>Save</button>
+{{!-- {{input value=model.beersTasted}} --}}
+{{!-- <button {{action 'edit' model}}>Save</button> --}}
 
 <p>Brewery Notes: {{model.notes}}</p>
-{{input value=model.notes}}
-<button {{action 'edit' model}}>Save</button>
+{{!-- {{input value=model.notes}}
+<button {{action 'edit' model}}>Save Changes</button> --}}
 <button {{action 'deleteBrewery' model}}>Delete Brewery</button>
 {{!-- <button {{action 'deleteBrewery'}}>Delete Brewery</button> --}}
-{{!-- <button>Edit Brewery</button> --}}
+{{#link-to 'brewery.edit-brewery'}}<button>Edit Brewery</button>{{/link-to}}
 {{#link-to 'breweries'}}<button>Breweries</button>{{/link-to}}
+
+{{outlet}}
