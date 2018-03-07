@@ -1,7 +1,9 @@
 <h2>Add Brewery</h2>
-{{input value=model.name placeholder="Brewery Name"}}
-{{input value=model.location placeholder="Brewery Location"}}
-{{input value=model.beersTasted placeholder="Beers Tasted"}}
-{{input value=model.notes placeholder="Notes"}}
-<button {{action 'save' model}}>Save</button>
+<form {{action 'save' model on='submit'}}>
+  <p>Name {{input value=model.name placeholder="Brewery Name" required=true}}</p>
+  <p>Location {{input value=model.location placeholder="Brewery Location"}}</p>
+  <p>Beers Tasted {{input value=model.beersTasted placeholder="Beers Tasted"}}</p>
+  <p>Notes {{input value=model.notes placeholder="Brewery Notes"}}</p>
+  <button>Save</button>
+</form>
 {{#link-to 'breweries'}}<button>Close</button>{{/link-to}}
