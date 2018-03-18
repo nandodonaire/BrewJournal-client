@@ -12,6 +12,10 @@ body {
   color: #FFFFFF;
 }
 
+.welcome-header {
+  font-size: 50px;
+}
+
 .pacifico-red {
   font-family: 'Pacifico', cursive;
   color: #E23D57;
@@ -24,4 +28,8 @@ body {
 
 tbody {
   // background-color: #FFFFFF;
+}
+
+a {
+  color: inherit;
 }
