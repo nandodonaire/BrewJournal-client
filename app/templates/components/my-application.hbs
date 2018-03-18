@@ -22,13 +22,13 @@
   </div>
 </nav>
 
-{{!-- <h1>Welcome to BrewJournal!</h1> --}}
-
 {{#if user}}
-  <h1>Hello {{user}}</h1>
+  <h1 class="hello-message">Hello <span class="pacifico-red">{{user}}</span></h1>
   {{else}}
-  <h1>Welcome to BrewJournal!</h1>
-  <h3>Please sign-in to track your favorite breweries</h3>
+  <div class="welcome-screen">
+    <h1 class="welcome-header">Welcome to <span class="pacifico-red">Brew</span><span class="pacifico-white">Journal</span></h1>
+    <h3 class="welcome-text">Please sign-in to track your favorite breweries!</h3>
+  </div>
 {{/if}}
 
 {{#each flashMessages.queue as |flash|}}

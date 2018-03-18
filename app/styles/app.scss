@@ -1,1 +1,27 @@
 @import "ember-bootstrap/bootstrap";
+
+body {
+  background-color: #241F20;
+  color: #FFFFFF;
+  // background: url("https://i.imgur.com/W9H3195.jpg") no-repeat center center fixed;
+  // background-size: cover;
+}
+
+.welcome-screen {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.pacifico-red {
+  font-family: 'Pacifico', cursive;
+  color: #E23D57;
+}
+
+.pacifico-white {
+  font-family: 'Pacifico', cursive;
+  color: #FFFFFF;
+}
+
+tbody {
+  // background-color: #FFFFFF;
+}
