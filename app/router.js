@@ -19,6 +19,7 @@ Router.map(function () {
   this.route('brewery', {path: '/breweries/:brewery_id'}, function() {
     this.route('edit-brewery');
   });
+  this.route('home-message');
 });
 
 export default Router;
