@@ -1,9 +1,9 @@
 <h2>Brewery</h2>
 
-<h3>{{model.name}}</h3>
-<p>Location: {{model.location}}</p>
-<p>Beers Tasted: {{model.beersTasted}}</p>
-<p>Brewery Notes: {{model.notes}}</p>
+<h3 class="brewery-name">{{model.name}}</h3>
+<p class="brewery-data">Location: {{model.location}}</p>
+<p class="brewery-data">Beers Tasted: {{model.beersTasted}}</p>
+<p class="brewery-data">Brewery Notes: {{model.notes}}</p>
 
 <button {{action 'deleteBrewery' model}} class="btn btn-danger">Delete Brewery</button>
 {{#link-to 'brewery.edit-brewery'}}<button class="btn btn-warning">Edit Brewery</button>{{/link-to}}

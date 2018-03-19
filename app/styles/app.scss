@@ -1,10 +1,9 @@
 @import "ember-bootstrap/bootstrap";
 
 body {
-  background-color: #241F20;
+  background: url("https://i.imgur.com/teQOcX1.jpg?1") no-repeat center center fixed;
+  background-size: cover;
   color: #FFFFFF;
-  // background: url("https://i.imgur.com/W9H3195.jpg") no-repeat center center fixed;
-  // background-size: cover;
 }
 
 .welcome-screen {
@@ -12,8 +11,12 @@ body {
   color: #FFFFFF;
 }
 
+.welcome-text {
+  font-size: 30px;
+}
+
 .welcome-header {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .pacifico-red {
@@ -26,8 +29,22 @@ body {
   color: #FFFFFF;
 }
 
-tbody {
-  // background-color: #FFFFFF;
+.content-background {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 7px 20px 20px 20px;
+}
+
+.table tr {
+  font-size: 20px;
+}
+
+.brewery-name {
+  font-size: 30px;
+}
+
+.brewery-data {
+  font-size: 20px;
 }
 
 a {
