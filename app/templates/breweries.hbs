@@ -1,3 +1,4 @@
+<div class="content-background">
 {{#if model.breweries}}
   <h2>Breweries</h2>
   <h4>Please click on the name of the brewery to see more details</h4>
@@ -24,26 +25,6 @@
   <h4>You can add breweries by clicking on Add Brewery below</h4>
 {{/if}}
 
-{{!-- <table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-{{#each model as |brewery|}}
-  <tbody>
-    <tr>
-      {{#link-to 'brewery' brewery}}
-        <td>{{brewery.name}}</td>
-      {{/link-to}}
-      <td>{{brewery.location}}</td>
-    </tr>
-  </tbody>
-  {{/each}}
-</table> --}}
-
-<div>
 {{#link-to 'add-brewery'}}<button class="btn btn-primary">Add Brewery</button>{{/link-to}}
 {{outlet}}
 </div>
