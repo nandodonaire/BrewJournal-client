@@ -1,4 +1,5 @@
 <div class="content-background">
+  {{!-- If the user has added any breweries, a table is displayed listing the brewery names and locations. --}}
 {{#if model.breweries}}
   <h2>Breweries</h2>
   <h4>Please click on the name of the brewery to see more details</h4>
@@ -20,6 +21,7 @@
     </tbody>
     {{/each}}
   </table>
+  {{!-- If the user has no breweries, a message is displayed telling them how to add breweries. --}}
   {{else}}
   <h3 class="no-breweries-header">It looks like you currently don't have any breweries.</h3>
   <h4>You can add breweries by clicking on Add Brewery below</h4>

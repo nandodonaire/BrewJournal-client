@@ -22,8 +22,10 @@
   </div>
 </nav>
 
+{{!-- If a user is logged in, a 'hello' message is displayed with the email address of the user --}}
 {{#if user}}
   <h1 class="hello-message">Hello <span class="pacifico-red">{{user}}</span></h1>
+  {{!-- If a user is not logged in, it displays a generic welcome message --}}
   {{else}}
   <div class="welcome-screen">
     <h1 class="welcome-header">Welcome to <span class="pacifico-red">Brew</span><span class="pacifico-white">Journal</span></h1>
